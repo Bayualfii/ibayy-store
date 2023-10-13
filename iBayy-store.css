@@ -1,0 +1,395 @@
+*{
+    outline: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+    border: none;
+    text-emphasis: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'rubik';
+    background-color: rgb(237, 233, 233);
+    
+}
+.foto-iphone1 {
+    width:6em;;
+    height: 8em;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    height:50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left:0;
+    right:0;
+    z-index: 999;
+    top:0;
+}
+.nav-logo{
+    font-size:30px;
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-content a {
+    color:white;
+    display: inline-block;
+    margin: 0 2rem;
+    font-weight: 700;
+}
+.navbar-content a:hover {
+    color: grey ;
+}
+.navbar-content a::after{
+    content: '';
+    display:block;
+    padding-bottom: 0.1rem;
+    border-bottom: 0.1rem solid grey;
+    transform: scalex(0);
+    transition: 0.3s linear;
+}
+.navbar-content a:hover::after {
+    transform: scalex(0.7);
+
+}
+.navbar-plus a {
+    color: rgb(255, 255, 255);
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+.navbar-plus a:hover{
+    color:grey;
+}
+#hamburger-menu{
+    display: none;
+}
+.hero {
+    height: 130vh;
+    display:flex;
+    align-items: center;
+    background-image: url('background-ip.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero::after {
+    content:'';
+    display:block;
+    position: absolute;
+    width:100%;
+    bottom:0;
+    height:35%;
+  background: linear-gradient(0deg,rgb(237, 233, 233)8%,rgba(255,255,255,0)45%)
+}
+.hero .content {
+    padding:1.4rem 7%;
+    max-width: 40rem;
+}
+.hero .content h1 {
+    font-size: 4.3em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(237, 233, 233, 0.493)
+}
+.hero .content h1 span {
+    color: rgb(113, 112, 112);
+}
+.hero .content p {
+    color:rgb(0, 0, 0);
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(237, 233, 233, 0.493);
+}
+.hero .content .cta{
+    margin-top:1rem;
+    display: inline-block;
+    padding:0.8rem 2.3rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color:rgb(113, 112, 112);
+    border-radius:0.5rem;
+    box-shadow: 2px 2px 4px rgb(139, 137, 137);
+    font-weight: 500;
+}
+
+/*about me*/
+.about, .produk, .contack {
+padding: 4rem 9% 1.4rem;
+}
+.about h2, .produk h2, .contack h2 {
+
+    font-weight:900;
+    font-size:3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 6px rgba(18, 18, 18, 0.244);
+
+}
+.about .row {
+    display:flex;
+}
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+.about .row .about-img img {
+    width:100%;
+}
+.about .row .content-two {
+    flex: 1 1 40rem;
+    padding: 0 1rem;
+}
+.about .row .content-two p{
+    font-size: 16px;
+    margin-bottom: 0.8rem;
+    line-height: 1.4rem;
+}
+.about .row .content-two h3 {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+}
+/*end about me*/
+
+/*start menu section*/
+.produk p,
+.contack p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+.produk h2,
+.contack h2 {
+margin-bottom: 0.5rem;
+}
+.produk .row .menu-card img {
+    height: 200px;
+    width: 200px;
+    border-radius:50%;
+}
+.produk .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content:center;
+}
+.produk .row .menu-card {
+    text-align:center;
+    padding: 2rem 1rem;
+}
+.produk .row .menu-card h3{
+    margin: 0.5rem auto 0.5rem;
+}
+/*end menu section*/
+/* contack section start*/
+.contack .row{
+    display: flex;
+    margin-top: 1rem;
+    background-color:rgb(214, 211, 211);
+    
+}
+.contack .row .map{
+    flex: 1 1 22rem;
+    width: 100%;
+    object-fit: cover;
+}
+.contack .row form{
+    flex: 1 1 22rem;
+    padding:1.5rem 1rem;
+    text-align: center;
+    flex-wrap:wrap;
+}
+.contack .row form .input-group{
+    display: flex;
+    align-items: center;
+    margin-top: 1.2rem;
+    background-color: rgb(240, 238, 238);
+    border: 1px solid #000000;
+    }
+.contack .row form .input-group input {
+    width: 100%;
+    padding:1rem;
+    font-size: 1.2rem;
+    background: none;
+    color: #000000;
+}
+.contack .row form .input-group input::placeholder{
+    color: rgb(108, 107, 107);
+}
+.contack .row form .input-group .logo{
+    padding-left:1rem;
+}
+.contack .row form .btn {
+    margin-top: 1.4rem;
+    display: inline-block;
+    color: black;
+    font-size:1rem;
+    background-color:rgb(149, 147, 147);
+    padding:0.6rem 1.7rem;
+    border-radius:0.3rem;
+    cursor:pointer;
+   
+}
+
+
+
+    /*ontack section end*/
+
+/*footer star*/
+footer{
+ background-color:rgb(149, 147, 147);
+ text-align: center;
+ padding: 0 0 1.5rem;
+ margin-top:3rem;
+ 
+
+}
+footer .sosmed{
+    padding: 0.5rem 0;
+
+}
+footer .sosmed a{
+    color: black;
+    margin: 1rem;
+}
+footer .sosmed a:hover,
+footer .links a:hover{
+color:white ;
+transition-duration: 0.5s;
+
+}
+footer .links{
+    margin-bottom: 1rem;
+}
+footer .links a{
+    color:black;
+    margin-bottom: 1.4rem;
+}
+footer .links a{
+    padding:0.7rem 1rem;
+}
+footer .credit{
+font-size: 0.8rem;
+
+}
+footer .credit a{
+    color:rgb(0, 0, 0);
+    font-weight:700;
+}
+footer .credit p{
+    color:white;
+}
+/*footer end*/
+
+
+
+
+
+
+
+
+
+
+/*media querist*/
+
+/*laptop*/
+@media (max-width: 1366px) {
+    html {
+    font-size: 100%;
+    }
+}
+
+/*tablet*/
+@media(max-width: 1024px)
+ {
+footer{
+    padding:1rem 0 2rem;
+}
+
+    .contack .row{
+        display: block;
+        margin: 0;    }
+    .about .row .content-two p{
+        line-height: 1.7rem;
+    }
+    .contack .row form{
+    padding-top:0;
+    }
+    html {
+    font-size: 62.5%;
+    }
+    #hamburger-menu{
+        display: inline-block;
+    }
+   
+    .navbar-content{
+        position:absolute;
+        background-color:white;
+        top: 100%;
+        right:-100%;
+        height:100vh;
+        width:15em;
+        transition: 0.5s;
+    }
+    .navbar-content a{
+        color:black;
+        display:block;
+        margin: 1.5rem;
+        padding:0.5rem;
+    }
+    .navbar-content a::after {
+        transform-origin: 0 0;
+    }
+    .navbar-content a:hover::after {
+        transform-origin: 0 0;
+        transform:scalex(0.3)
+    }
+    .nav-logo{
+        font-size:18px;
+    }
+    .navbar-content.active {
+        right:0;
+
+    }
+    .about .row{
+        flex-wrap: wrap;
+    }
+    .about .row .about-img img{
+        height: 24rem;
+        object-fit: cover;
+    }
+    .about .row .content-two {
+        padding: 0;
+    }
+    .about .row .content-two h3{
+    margin-top: 1rem;
+    font-size:20px;
+    }
+    .contack .row form{
+        padding-top: 0;
+    }
+    .produk p {
+font-size: 1.4rem;
+    }
+
+}
+/*handphone*/
+@media (max-width: 750px) {
+    html{
+    font-size: 55%;
+    }
+    .nav-logo{
+        font-size: 15px;
+    }
+}
